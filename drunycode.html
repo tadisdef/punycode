@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+    <!--USING THE HTTP EQUIV FOR UTF 8 ALLOWS THE USE OF IDNs IN LINKS AND THEREFORE PROTECTS FROM AUTOMATED VULNERABILITY SCANNERS AND DDOS SOFTWARE-->
+    <body>
+    <h1><center>This is a test page 代码库</center></h1>
+    <link rel="stylesheet" type="text/css" href="http://代码库.quickerticker.com/sheets.css"/>
+        <div id="diff">
+        <p>
+            This should be styled differently.
+        </p></div>
+        <!--THESE SUBDOMAINS USE PUNYCODE TO MAKE AN INTERNATIONALIZED DOMAIN NAME-->
+<img src="http://代码库.quickerticker.com/anar.jpg" height="200px" width="200px"><br>
+<iframe src="http://代码库.quickerticker.com/frame.html" height="400px" width="400px"></iframe><br><br>
+<a href="http://代码库.quickerticker.com/frame.html" target="_blank">Link to frame page using punycode IDN</a>
+<br>
+<!--THE SPECIAL CHARACTERS IN THE FOLLOWING FILE NAMES ALSO CAN BE USED FOR MORE FILE SPECIFIC PROTECTION-->
+<img src="a{b}c.jpg" height="200px" width="200px">
+<img src="a~b$c^d_e-f.jpg" height="200px" width="200px">
+    </body>
+</html>
