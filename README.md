@@ -15,7 +15,7 @@ Basically punycode converts unicode characters into ASCII characters such as 비
 Sometimes the browser likes to change the foreign domain back into punycode, and converting the domain to punycode instead of foreign characters can make it vulnerable again, a possible solution is adding the <meta http-equiv="location" content="http://мкд.tk"> tag to make the http response recognize the foreign domain.
 
 
-Filename Charachter Encoding
+Filename Character Encoding
 ----------------------------
 
 The concept behind this part is again to use foreign characters to encode filenames, and including special characters to make it even more complex and harder to scan such as making "blahblahblah.html" into "a末_-яb1.1c~d.html". In my original tests only periods, tildes, underscores, dashes, foreign characters, and the usual numbers/letters work for these file, but have encrypted them from software being able to detect them. Of course foreign characters won't work on all systems, and to use them you have to have a utf-8 tag. More recently I've stuck to using { } ~ $ ^ _ - because these are not specifically forbidden by most systems (and they worked with my apache-chrome combo).
